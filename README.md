@@ -11,7 +11,7 @@ launchctl setenv SPRING_PROFILES_ACTIVE production
 ## What is there?
 * Swagger Documentation
 * Exception Handling examples( Filter Level and Controller Level)
-* Spring Security is enabled with Basic In-Memory Authentication
+* Spring Security is enabled with Basic In-Memory Authentication( V1.0.0.RELEASE)
 * Custom Error Messages for 401 and 403 responses from Spring Security
 * Spring Data JPA
 * Spring Profiles for Development and Production
@@ -22,3 +22,8 @@ Refer to [pwelagedara/bot](https://github.com/pwelagedara/bot) for examples. The
 
 ## WAR/EAR 
 Refer to [pwelagedara/ear](https://github.com/pwelagedara/ear) for examples. 
+
+## Releases
+* V1.0.0.RELEASE - With In-Memory Authentication
+* V1.0.0.RELEASE - With JDBC Authentication
+
