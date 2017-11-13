@@ -43,7 +43,7 @@ public class SampleController {
             @ApiParam(name = "input_dto", value = "${SampleController.sampleMethod.inputDto.value}", required = true) @RequestBody InputDto inputDto
     ) {
         for (final String profileName : environment.getActiveProfiles()) {
-            LOG.info("Currently active profile - " + profileName);
+            LOG.info("Currently Active Profile :" + profileName);
         }
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = authentication.getName();
@@ -64,7 +64,7 @@ public class SampleController {
             @ApiParam(name = "input_dto", value = "${SampleController.sampleMethod.inputDto.value}", required = true) @RequestBody InputDto inputDto
     ) {
         for (final String profileName : environment.getActiveProfiles()) {
-            LOG.info("Currently active profile - " + profileName);
+            LOG.info("Currently Active Profile :" + profileName);
         }
         return new ResponseEntity<OutputDto>(new OutputDto("some value"), HttpStatus.BAD_REQUEST);
     }
