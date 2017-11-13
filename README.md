@@ -34,8 +34,8 @@ uriParams.put("moon", "Phobos");
 // Query parameters
 UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
     // Add query parameter
-    .queryParam("firstName", "Mark")
-.   queryParam("lastName", "Watney");
+    .queryParam("firstName", "ABC")
+.   queryParam("lastName", "DEF");
 
 //Map to store the headers required for the API Access
 MultiValueMap<String, Object> headers = new LinkedMultiValueMap<>();
