@@ -19,3 +19,6 @@ launchctl setenv SPRING_PROFILES_ACTIVE production
   
 ## RestTemplate 
 Refer to [pwelagedara/bot](https://github.com/pwelagedara/bot) for examples. The code should go into com.pubudu.template.integration.rest package.
+
+## WAR/EAR 
+Refer to [pwelagedara/ear](https://github.com/pwelagedara/ear) for examples. 
