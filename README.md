@@ -2,10 +2,10 @@
 
 The api documentation will be available in http://localhost:8088/v2/api-docs.
     
-## To change spring profile in IntelliJ 
+## To change Spring Profile in IntelliJ 
 launchctl setenv SPRING_PROFILES_ACTIVE production and then restart IDE
 
-## What is there
+## What is there?
 * Swagger Documentation
 * Exception Handling examples( Filter Level and Controller Level)
 * Spring Security is enabled with Basic In-Memory Authentication
