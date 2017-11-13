@@ -12,3 +12,4 @@ launchctl setenv SPRING_PROFILES_ACTIVE production and then restart IDE
 * Custom Error Messages for 401 and 403 responses from Spring Security
 * Spring Data JPA
 * Spring Profiles for Development and Production
+* CORS Support for Web Apps
