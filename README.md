@@ -3,7 +3,10 @@
 The api documentation will be available in http://localhost:8088/v2/api-docs.
     
 ## To change Spring Profile in IntelliJ 
-launchctl setenv SPRING_PROFILES_ACTIVE production and then restart IDE
+In Terminal execute the following and restart the IDE.
+```
+launchctl setenv SPRING_PROFILES_ACTIVE production
+```
 
 ## What is there?
 * Swagger Documentation
