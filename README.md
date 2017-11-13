@@ -18,7 +18,7 @@ launchctl setenv SPRING_PROFILES_ACTIVE production
 * CORS Support for Web Apps
 
 ## Adding RestTemplate to Consume APIs
-Below is an example.
+Below is an example( Refer to https://stackoverflow.com/questions/35998790/resttemplate-how-to-send-url-and-query-parameters-together).
 
 ```
 // Rest Template
@@ -34,8 +34,8 @@ uriParams.put("moon", "Phobos");
 // Query parameters
 UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
     // Add query parameter
-    .queryParam("firstName", "ABC")
-.   queryParam("lastName", "DEF");
+    .queryParam("firstName", "Mark")
+.   queryParam("lastName", "Watney");
 
 //Map to store the headers required for the API Access
 MultiValueMap<String, Object> headers = new LinkedMultiValueMap<>();
