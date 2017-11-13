@@ -52,3 +52,18 @@ ResponseEntity<ApiAiResponse> response = restTemplate.exchange(
 
 ApiAiResponse apiAiResponse = response.getBody();
 ```
+
+Below is an HTTP POST example.
+
+```
+// Body
+HttpEntity<Reply> request = new HttpEntity<>(new Reply(new Message(message), new Recipient(senderId)));
+
+// We don't care about the response
+restTemplate.exchange(
+    builder.buildAndExpand().toUri(),
+    HttpMethod.POST,
+    request,
+    Object.class
+    );
+```    
