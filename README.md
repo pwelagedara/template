@@ -17,3 +17,5 @@ launchctl setenv SPRING_PROFILES_ACTIVE production
 * Spring Profiles for Development and Production
 * CORS Support for Web Apps
   
+## RestTemplate 
+Refer to [pwelagedara/bot](https://github.com/pwelagedara/bot) for examples. The code should go into com.pubudu.template.integration.rest package.
