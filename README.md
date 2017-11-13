@@ -25,5 +25,6 @@ Refer to [pwelagedara/ear](https://github.com/pwelagedara/ear) for examples.
 
 ## Releases
 * V1.0.0.RELEASE - With In-Memory Authentication
-* V1.0.0.RELEASE - With JDBC Authentication
+* V2.0.0.RELEASE - With JDBC Authentication
+* V2.0.1.RELEASE - With JDBC Authentication without Sessions
 
