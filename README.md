@@ -16,3 +16,39 @@ launchctl setenv SPRING_PROFILES_ACTIVE production
 * Spring Data JPA
 * Spring Profiles for Development and Production
 * CORS Support for Web Apps
+
+## Adding RestTemplate to Consume APIs
+Below is an example.
+
+```
+// Rest Template
+RestTemplate restTemplate = new RestTemplate();
+
+String url  = "http://xxxxx.ngrok.io/abc/{planet}/{moon}";
+
+ // URI (URL) parameters
+Map<String, String> uriParams = new HashMap<String, String>();
+uriParams.put("planet", "Mars");
+uriParams.put("moon", "Phobos");
+
+// Query parameters
+UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(url)
+    // Add query parameter
+    .queryParam("firstName", "Mark")
+.   queryParam("lastName", "Watney");
+
+//Map to store the headers required for the API Access
+MultiValueMap<String, Object> headers = new LinkedMultiValueMap<>();
+headers.add("Authorization", "Bearer 0ccd4b4fc32648098bd63ff9f3676575");
+HttpEntity httpEntity = new HttpEntity(headers);
+
+ResponseEntity<ApiAiResponse> response = restTemplate.exchange(
+    builder.buildAndExpand(uriParams).toUri(),
+    builder.buildAndExpand().toUri(),
+    HttpMethod.GET,
+    httpEntity,
+    ApiAiResponse.class
+    );
+
+ApiAiResponse apiAiResponse = response.getBody();
+```
