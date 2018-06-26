@@ -1,6 +1,6 @@
 # template
 
-The api documentation will be available in http://localhost:8088/v2/api-docs.
+The api documentation will be available in http://localhost:8088/v2/api-docs. Open that using Swagger UI.
     
 ## To change the Spring Profile in IntelliJ 
 In Terminal execute the following and restart the IDE.
