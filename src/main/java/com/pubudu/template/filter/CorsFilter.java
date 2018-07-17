@@ -31,6 +31,8 @@ public class CorsFilter extends OncePerRequestFilter {
         response.addHeader("Access-Control-Allow-Origin", "*");
 
         // Preflight Checks
+        // TODO: 7/17/18 It is cleaner to have this filter added into Spring Security Filter chain using addFilterBefore. Do the HTTP Method check there as well
+        // It is a good idea to handle Preflight Checks in a different filter
         if (request.getHeader("Access-Control-Request-Method") != null && "OPTIONS".equals(request.getMethod())) {
             response.addHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
             response.addHeader("Access-Control-Allow-Headers", "Content-Type");
